@@ -1,0 +1,101 @@
+:root {
+    --primary-color: #0077B6;
+    --secondary-color: #023E8A;
+    --text-color: black;
+    --background-color: #ADE8F4;
+}
+
+
+
+/* General styles */
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: var(--text-color);
+    background-color: var(--background-color);
+    margin: 0;
+    padding: 0;
+}
+  
+a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: var(--primary-color);
+    color: white;
+}
+  
+header img {
+    height: 50px;
+}
+  
+nav a {
+    margin: 0 10px;
+    color: white;
+}
+
+.hero {
+    position: relative;
+    text-align: center;
+    color: black;
+}
+  
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+  
+.hero h1 {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Oswald', serif;
+    color: white;
+    font-size: 3rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 1rem;
+}
+
+article {
+    position: absolute;
+    bottom: 10%;
+    left: 10%;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 1rem;
+    border-radius: 5px;
+    max-width: 300px;
+}
+  
+article img {
+    float: right;
+    margin-left: 10px;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: var(--secondary-color);
+    color: white;
+}
+  
+footer .sociallinks a img {
+    width: 30px;
+    height: 30px;
+    margin: 0 5px;
+}
+  
+footer .sociallinks a {
+    text-decoration: none;
+}
+  
