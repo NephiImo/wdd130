@@ -92,17 +92,6 @@ section p {
     padding: 1rem;
 }
 
-section h3 {
-    position: absolute;
-    top: 159.8%;
-    left: 40%;
-    font-family: 'Oswald', sans-serif;
-    color: var(--secondary-color);
-    text-align: center;
-    font-size: 2rem;
-    margin-top: 2rem;
-}
-
 .adventures {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -111,6 +100,17 @@ section h3 {
     padding: 1rem;
     display: flex;
     align-items: baseline;
+}
+
+.adventures h2 {
+    position: absolute;
+    top: 159.8%;
+    left: 42%;
+    font-family: 'Oswald', sans-serif;
+    color: var(--secondary-color);
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 2rem;
 }
 
 figure {
