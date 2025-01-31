@@ -111,7 +111,22 @@ section p {
     text-align: center;
     font-size: 2rem;
     margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
 }
+
+.adventures figure {
+    flex: 1; /* Makes all figures equal width */
+    text-align: center;
+}
+
+.adventures img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
 
 figure {
     margin: 0;
