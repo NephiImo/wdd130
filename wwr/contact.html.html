@@ -28,37 +28,33 @@
         <section class="contact-form">
             <h2>Contact Us</h2>
             <form action="submit_form.php" method="post">
-                <label for="name">Full Name:</label>
-                <input type="text" id="name" name="name" required>
-        
+                <label for="full-name">Full Name:</label>
+                <input type="text" id="full-name" name="full-name" required>
+
                 <label for="email">Email Address:</label>
                 <input type="email" id="email" name="email" required>
-        
+
                 <fieldset id="purpose-fieldset">
                     <legend>Purpose of Message:</legend>
-                    <label for="general-inquiry">
-                        <input type="radio" id="general-inquiry" name="purpose" value="General Inquiry" required> General Inquiry
-                    </label>
-                    <label for="reservation-question">
-                        <input type="radio" id="reservation-question" name="purpose" value="Reservation Question"> Reservation Question
-                    </label>
-                    <label for="website-suggestion">
-                        <input type="radio" id="website-suggestion" name="purpose" value="Website Suggestion"> Website Suggestion
-                    </label>
+                    <input type="radio" id="general-inquiry" name="purpose" value="General Inquiry" required>
+                    <label for="general-inquiry">General Inquiry</label>
+
+                    <input type="radio" id="reservation-question" name="purpose" value="Reservation Question">
+                    <label for="reservation-question">Reservation Question</label>
+
+                    <input type="radio" id="website-suggestion" name="purpose" value="Website Suggestion">
+                    <label for="website-suggestion">Website Suggestion</label>
                 </fieldset>
-        
+
                 <label for="message">Message:</label>
                 <textarea id="message" name="message" rows="5" required></textarea>
-        
-                <label for="subscribe">
-                    <input type="checkbox" name="subscribe" value="yes">
-                    Please subscribe me to the monthly newsletter
-                </label>
-        
-                <button type="submit" class="submit-btn">📩 Send Message</button>
+
+                <input type="checkbox" id="subscribe" name="subscribe" value="yes">
+                <label for="subscribe">Please subscribe me to the monthly newsletter</label>
+
+                <button type="submit" id="submit-btn" class="submit-btn">📩 Send Message</button>
             </form>
-        </section>
-        
+        </section>        
         
         <section>
             <h2>Our Contact Information</h2>
