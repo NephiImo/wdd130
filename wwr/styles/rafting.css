@@ -70,7 +70,7 @@ nav a:hover {
     left: 50%;
     transform: translate(-50%, -50%);
     font-family: 'Oswald', serif;
-    color: white;
+    color: beige;
     font-size: 3rem;
     background-color: rgba(0, 0, 0, 0.5);
     padding: 1rem;
@@ -79,11 +79,11 @@ nav a:hover {
 
 section h2 {
     font-family: 'Oswald', sans-serif;
-    color: var(--secondary-color);
+    color: black;
     text-align: center;
     font-size: 2rem;
     margin-top: 2rem;
-}
+} 
 
 section p {
     font-size: 1.1rem;
@@ -113,7 +113,7 @@ section p {
 }
 
 .adventures figure {
-    flex: 1; /* Makes all figures equal width */
+    flex: 1;
     text-align: center;
 }
 
@@ -133,7 +133,7 @@ figure img {
     width: 100%;
     height: auto;
     border-radius: 5px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Subtle shadow for images */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 
 figcaption {
@@ -169,6 +169,17 @@ footer {
     color: white;
     position: relative;
 }
+
+footer a {
+    color: white; /* Change text color to white */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: #00aaff; /* Optional: Highlight color on hover */
+}
   
 footer .sociallinks {
     display: flex;
@@ -187,7 +198,6 @@ footer .sociallinks a {
     text-decoration: none;
 }
   
-/* Employee Profiles Section */
 .employee-profiles {
     text-align: center;
     padding: 2rem 0;
@@ -224,7 +234,6 @@ footer .sociallinks a {
     font-size: 1rem;
 }
 
-/* Contact Form Section */
 .contact-form {
     max-width: 600px;
     margin: 2rem auto;
@@ -283,14 +292,12 @@ footer .sociallinks a {
     transform: scale(0.98);
 }
 
-/* Map Section */
 .map {
     display: flex;
     justify-content: center;
     margin-top: 20px;
 }
 
-/* Responsive Adjustments */
 @media (max-width: 768px) {
     .profiles {
         flex-direction: column;
@@ -299,5 +306,295 @@ footer .sociallinks a {
 
     .contact-form {
         padding: 1.5rem;
+    }
+}
+
+.newsletter {
+    text-align: center;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    margin: 2rem auto;
+    max-width: 500px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.newsletter h2 {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+
+.newsletter-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.newsletter-form label {
+    text-align: left;
+    font-size: 1rem;
+}
+
+.newsletter-form input {
+    width: 100%;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.newsletter-form button {
+    background-color: var(--link-hover-color);
+    color: black;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.newsletter-form button:hover {
+    background-color: #ff9100;
+}
+
+.adventure-info h2 {
+    color: black;
+}
+
+.cta {
+    text-align: center;
+    background-color: var(--secondary-color); 
+    color: white;
+    padding: 3rem 2rem;
+    margin: 2rem 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.cta h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    font-family: 'Oswald', sans-serif;
+    color: white;
+}
+
+.cta p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.5;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: var(--link-hover-color);
+    color: black;
+    font-size: 1.2rem;
+    padding: 0.75rem 1.5rem;
+    border-radius: 5px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.cta-button:hover {
+    background-color: #ff8800;
+    transform: scale(1.05);
+}
+
+.cta-button:active {
+    background-color: #cc6600;
+    transform: scale(0.98);
+}
+
+.grid-layout {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.grid-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 1.5rem;
+    border-radius: 10px;
+}
+
+.grid-item.text {
+    background: var(--background-color);
+    padding: 2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.grid-item.image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+    .grid-layout {
+        grid-template-columns: 1fr; 
+    }
+}
+
+.featured-trip {
+    position: relative;
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.trip-image {
+    position: relative;
+    width: 100%;
+    max-height: 500px;
+    overflow: hidden;
+}
+
+.trip-image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.trip-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    max-width: 80%;
+}
+
+.trip-overlay h2 {
+    font-size: 2.5rem;
+    color: white;
+    font-family: 'Oswald', sans-serif;
+    margin-bottom: 1rem;
+}
+
+.trip-overlay p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+
+.trip-overlay .cta-button {
+    display: inline-block;
+}
+
+.trip-descriptions {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+    gap: 2rem;
+    margin: 3rem auto;
+    padding: 1rem;
+    max-width: 1200px;
+}
+
+.trip {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column; /* Stack image and info */
+}
+
+.trip:hover {
+    transform: scale(1.05);
+}
+
+.trip img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.trip-info {
+    padding: 1.5rem;
+    text-align: center;
+}
+
+.trip-info h3 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.8rem;
+    color: var(--secondary-color);
+    margin-bottom: 1rem;
+}
+
+.trip-info p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+/* 📌 Mobile Fix */
+@media (max-width: 768px) {
+    .trip-descriptions {
+        grid-template-columns: 1fr; /* Stacks trips in one column */
+    }
+}
+
+.trip-table {
+    margin: 3rem auto;
+    max-width: 900px;
+    text-align: center;
+}
+
+.trip-table h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: var(--primary-color);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+th, td {
+    padding: 1rem;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: var(--primary-color);
+    color: white;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+
+td {
+    font-size: 1.1rem;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* 📌 Responsive Table */
+@media (max-width: 768px) {
+    th, td {
+        padding: 0.8rem;
+        font-size: 1rem;
+    }
+
+    .trip-table {
+        overflow-x: auto;
     }
 }
